@@ -6,14 +6,15 @@
             b{ color: red; }
             .c_name{color:green;}
             #i_name{color: yellow;}
-            p:before{ content: "★"; }
-            p:after{ content: "☆"; }
+            p:before { content: "★"; }
+            p:after { content: "☆"; }
             p::first-letter{ font-size: 100px;}
             p::first-line{ color: pink;}
 
-            .li1:first-child{
-                color: red;
-            }
+            .li1:first-child{color: red; } 
+            .li1:last-child{color: blue; }
+            .li:nth-child(3){color: violet}
+            /* 1st 2nd 3th 4th 5th ..... nth */
         </style>
     <head>
     <body>
@@ -28,6 +29,7 @@
                 <!-- child, 자식 아이-->
                 <li class="li1">리스트2</li>
                 <li class="li1">리스트3</li>
+                <li class="li1">리스트3.1</li>
                 <li class="li1">리스트4</li>
             </ul>
     </body>
