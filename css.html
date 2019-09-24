@@ -15,6 +15,12 @@
             .li1:last-child{color: blue; }
             .li:nth-child(3){color: violet}
             /* 1st 2nd 3th 4th 5th ..... nth */
+            /*:link 기본, :visited 방문후, :hover 마우스 올리면, :active 눌렀을때, :focus 집중*/
+            a link{color: teal;}
+            a :visited{color: turquoise;}
+            a :hover{color:red;}
+            a :active{color:yellow;}
+            a :focus{color: blue;}
         </style>
     <head>
     <body>
@@ -32,5 +38,7 @@
                 <li class="li1">리스트3.1</li>
                 <li class="li1">리스트4</li>
             </ul>
+
+            <a href="#">링크버튼</a>
     </body>
 </html>
