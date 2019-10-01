@@ -28,6 +28,8 @@
             div>ul>li{ text-decoration: underline; }
             /* 자식 선택자: div의 자식(child) li */
 
+            div,ul,li{ font-weight: bold;}
+            /* 선택자 조합: div와 ul과 li*/
         </style>
     <head>
     <body>
@@ -59,5 +61,55 @@
 
                 </ul>
             </div>
+
+            <style>
+                #box_model1,#inline_model{
+                    background-color: gray;
+                    width: 100px;
+                    height: 100px;
+                    margin: 30px; /* 바깥여백 */
+                    border: solid 1px black;
+                    /* 경계선: 실선 1두께 검은색; */
+                    padding: 20px; /* 안쪽여백 */
+                }
+            </style>
+            <div id="box_model1">박스모델</div>
+            <span id="inline_model">인라인모델</span>
+            <style>
+                #box2{
+                    margin: 30px 20px 10px 5px;
+                    /*위 오른쪽 아래 왼쪽*/
+                    margin: 50px 20px;
+                    /* 상하 좌우 */
+                    margin-top: 30px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    /* padding, border도 동일*/
+                }
+            </style>
+            <div id="box2">방향별 여백</div>
+
+            <style>
+            #css_target{
+                color: red;
+            }
+            .css_class{
+                color:blue;
+            }
+            </style>
+            <div class="css_class" id="css_target"
+            style="color:green;">겹침과 개별성</div>
+
+            <style>
+            #color sample{
+                color: black;
+                color: #000; /* 컬러코드 #rgb */
+                color: #606bcd; /* #rrggbb, 0~9 a~f */
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%); /* 0% ~ 100% */
+            }
+            </style>
+            <div id="color_sample">색상</div>
     </body>
 </html>
