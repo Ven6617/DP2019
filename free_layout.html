@@ -1,11 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <title>Free_layout</title>
+        <title>자유 레이아웃</title>
         <meta charset="utf-8">
+        <style>
+            
+            header>h1>span:nth-child(1){
+                color: white;
+            }
+            header>h1>span:nth-child(2){
+                color: #d4d4d4;
+            }
+            header{
+                background-color: #a1725c;
+                color: white;
+                padding: 10px 50px;
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+            header>h1{
+                float: left;
+                margin: 0px;
+            }
+            header>nav{
+                float: right;
+            }
+            header>nav>ul{
+                margin: 9px;
+            }
+            #main_visual{
+                padding-top: 250px;
+                padding-bottom: 250px;
+                background-image:url("images/free_bg.jpg");
+                background-position: 50% 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: #000;
+                color: white;
+                text-align: center;
+            }
+            #main_visual h2{
+                margin: 0px;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+                font-family: Helvetica;
+                font-size: 45px;
+            }
+            #main_visual div:nth-child(1){
+                font-size: 20px;
+            }
+            #main_visual div:nth-child(3){
+                font-size: 15px;
+            }
+            #main_visual div:nth-child(4){
+                margin-top: 100px;
+            }
+            section{
+                text-align: center; 
+            }
+            section>h3{
+                color: #634043;
+                font-weight: normal;
+                font-size: 25px;
+                margin-top: 50px;
+                margin-right: 0px;
+                margin-bottom: 50px;
+                margin-left: 0px;
+                margin: 0px; 
+                margin: 50px 0px 50px 0px; 
+                margin: 50px 0px; 
+            }
+            section>p{
+                margin: 80px 0px; 
+            }
+            #about_section>ul{
+                padding: 0px;
+                margin: 0px 100px; 
+            }
+            #about_section>ul>li{
+                float: left;
+                width: 200px;
+                width: 25%;
+                width: calc(25% - (1px * 3 /4) - 30px - 30px); 
+                list-style: none; 
+                border-right: solid 1px #ccc;
+                padding: 30px;
+            }
+            #about_section>ul>li:nth-child(4){
+                border: none;
+            }
+            #about_section dd{
+                margin: 0px;
+            }
+            #work_section>ul{
+                padding: 0px;
+                margin: 0px;
+            }
+            #work_section>ul>li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            #work_section img{
+                width: 100%;
+                display: block;
+            }
+            #wrap{
+                min-width: 900px;
+                max-width: 1920px;
+                margin: 0px auto; 
+            }
+        </style>
     </head>
-
     <body>
-            <a href="index.html">돌아가기</a>
+        <a href="index.html">돌아가기</a>
+        
+        <header>
+            <h1>
+                <span>Book</span><span>Store</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>≡  카테고리</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <div id="main_visual">
+                <div>
+                <a href="#">
+                </a>
+            </div>
+            </div>
+            <section id="about_section">
+            <h3>월간 베스트 셀러</h3>
+                <ul>
+                    <li>
+                        <a href="https://mm.munpia.com/?menu=novel&id=104753"><img src="images/best_12.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>전지적 독자 시점</dt>
+                         <h5>
+                            <dd>오직 나만이, 이 세계의 결말을 알고 있다.</dd>
+                         </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=80773184"><img src="images/best_03.jpg " width="200px" height="300px"></a>
+                        <dl>
+                            <dt>홀</dt>
+                         <h5>
+                            <dd>죽기 전 아내가 쓰던 '한 인간에 대한 </dd>
+                                <dd>고발문'의 내용조차도 알 수 없어 그 어떤 해명도 할 수 없는 오기.</dd>
+                                <dd>그는 이제 집이라는 닫힌 공간에서, 아무 것도 움직일 수 없는 채로,</dd> 
+                                <dd>스스로의 악덕이 만든 커다란 구멍을 두 눈을 뜨고 마주해야만 한다. </dd>
+                         </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=171868379"><img src="images/best_04.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>아임 낫 파인</dt>
+                        <h5>
+                            <dd>괜찮다고 말하지만, 괜찮지 않은 너에게</dd>
+                        </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=115676846"><img src="images/best_08.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>도가니</dt>
+                            <h5>
+                            <dd>우리가 애써 외면하려는 거짓과 폭력의 실체를 적나라하게 파헤치고 </dd>
+                            <dd>  진실을 똑바로 보게끔 함으로써 </dd>
+                            <dd> 이 시대를 살아가는 우리가 결코 </dd>
+                            <dd>  잊지 않아야 할 깨달음을 준다.</dd>
+                        </h5>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <section id="about_section">
+            <h3>주간 베스트 셀러</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=4739090"><img src="images/best_06.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>고백</dt>
+                            <h5>
+                            <dd>"내 딸 마나미는 사고로 죽은 것이 아니라 살해당했습니다.</dd>
+                            <dd>그 범인은 바로 우리 반에 있습니다."</dd>
+                        </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=94764887"><img src="images/best_01.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>82년생 김지영</dt>
+                            <h5>
+                                    <dd>한국사회에서 여자로 살아가는 이들의 공포, 피로, 당황, </dd>
+                                    <dd>놀람, 혼란, 좌절의 연속에 대한 인생 현장 보고서.</dd>
+                                </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=205802616"><img src="images/best_14.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>한니발</dt>
+                                <h5>
+                                    <dd>현존하는 최고의 스릴러 작가 스티븐 킹은 한니발 렉터를 이렇게 표현했다.
+                                        </dd>
+                                    <dd> “우리 시대 소설이 낳은 가장 위대한 괴물이다.”</dd>
+                                </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=2809879"><img src="images/best_10.jpg" width="200px" height="300px"></a>
+                        <dl>
+                            <dt>드래곤 라자</dt>
+                            <h5>
+                                    <dd>국가 권력층의 암투와 몬스터들의 공격으로 거친 모험을 겪으며 
+                                        </dd>
+                                    <dd> 17세의 소년 후치를 비롯한 주인공들이 드래곤 라자를 찾아가는 이야기다.</dd>
+                                </h5>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <section id="about_section">
+            <h3>쉬운 독서</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=92677855"><img src="images/cbest_01.jpg" width="200px" height="234px"></a>
+                        <dl>
+                            <dt>나~~안 괜찮아</dt>
+                            <h5>
+                                    <dd>하루에도 수십 번은 "그래서 어쩌라고?"가 절로 나오는 갑갑한 상황들. 
+                                        </dd>
+                                    <dd> 그런 마음속에 들어왔다가 나간 것처럼 꼭 집어주는 만화가 실키의 그림 에세이.</dd>
+                                </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=526467"><img src="images/cbest_02.jpg " width="200px" height="160px"></a>
+                        <dl>
+                            <dt>거미와 파리</dt>
+                            <h5>
+                                    <dd> 1920년대 헐리우드 흑백 공포영화를 보는 듯한 느낌이다.  
+                                        </dd>
+                                    <dd> 등장인물인 거미와 파리가 옥신각신 주고받는 대화, 흑과 백이 절묘한 대조를 이루는 일러스트레이션이 일품이다.</dd>
+                                </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=156193983"><img src="images/cbest_03.jpg" width="200px" height="160px"></a>
+                        <dl>
+                            <dt>굿바이 프로젝트</dt>
+                            <h5>
+                                    <dd> '해피필스’라는 약의 발명으로 수명연장의 꿈이 실현되자. 지구는 동시에 폭발적 인구 증가라는 문제에 봉착한다.</dd>
+                                    <dd> 반면 더 이상 고통스러운 삶이 영속되기를 원하지 않는 이들은 ‘삶의 완성’을 위해 자살을 결심한다.</dd>
+                                    <dd> 이처럼 극단적 상황에서 정부는</dd>
+                                    <dd> 굿바이 프로젝트, 즉 개인적 삶의 아름다운 마무리를 돕기 위한 복지 정책을 고안해낸다. </dd>
+                                </h5>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=208958154"><img src="images/cbest_04.jpg" width="200px" height="234px"></a>
+                        <dl>
+                            <dt>3737</dt>
+                            <h5>
+                                    <dd> 동족고기를 먹는다. 이와 관련된 특별한 직업이 존재한다.</dd>
+                                    <dd> 시장, 중계인, 제작자, 재료상 등. 또한 법과 규칙이 있긴 하지만, </dd>
+                                    <dd> 도덕성보다 욕망이 앞서는 인물들로만 구성된 사회로 누군가 그것을 어겨도 욕구충족만 된다면 방임하는 주의이다.</dd>
+                                    <dd> 3737은 이러한 세계에서 살아가는 네 인물의 일상을 담은 작품이다.</dd>
+                                    
+                                </h5>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+        </section>
+    </div>
     </body>
 </html>
+        </section>
+        <section id="work_section">
+            <h3>추천작</h3>
+
+                <ul>
+                    <li>
+                        <img src="images/best_05.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                        <img src="images/best_07.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                            <img src="images/best_09.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                        <img src="images/best_11.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                        <img src="images/best_13.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                        <img src="images/best_15.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                         <img src="images/best_02.jpg"width="800px" height="550px">
+                    </li>
+                    <li>
+                         <img src="images/best_16.jpg"width="800px" height="550px">
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+        </section>
+    </div>
+    </body>
+</html>
+                       
